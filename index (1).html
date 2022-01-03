@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stranger Things</title>
+</head>
+<body>
+	<section class="banner">
+		<header>
+			<div class="toggle"></div>
+			<a href="#" class="logo"></a>
+		</header>
+
+		<div class="content">
+			<img src="copy.png" class="textimg">
+			<p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments,<br>terrifying supernatural forces and one strange little girl.</p>
+			<a href="https://www.youtube.com/watch?v=b9EkMc79ZSU" class="btn" target="_blank"><ion-icon name="play-circle-outline"></ion-icon>Watch Trailer</a>
+		</div>
+
+		<ul class="socialIcon">
+			<li><a href="https://www.facebook.com/StrangerThingsTV/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+			<li><a href="https://twitter.com/stranger_things" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+			<li><a href="https://www.instagram.com/strangerthingstv/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+		</ul>
+
+	</section>
+
+	<ul class="navigation">
+		<li><a href="#">Home</li>
+		<li><a href="#">About</li>
+		<li><a href="#">Cast</li>
+		<li><a href="#">Shop</li>
+		<li><a href="https://help.netflix.com/ru/contactus" target="_blank">Contact</li>
+	</ul>
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<script>
+		let menuToggle = document.querySelector('.toggle');
+		let navigation = document.querySelector('.navigation');
+		menuToggle.onclick = function(){
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
